@@ -1,0 +1,19 @@
+.container {
+text-align: justify;
+}
+h1{
+    color: blueviolet;
+}
+form{
+    border: 2px dashed rgb(54, 126, 145);
+padding: 30px 50px;
+}
+label{
+    font-size: 20px;
+    color:crimson;
+    font-weight: 800;
+}
+input{
+color: crimson;
+padding: 5px 10px;
+}
