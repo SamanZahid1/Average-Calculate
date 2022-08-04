@@ -10,6 +10,6 @@ function calculate(){
     let it = +document.querySelector("#it").value;
     let ai = +document.querySelector("#ai").value;
 
-    result = english + maths + urdu + computer + accounting + marketing + islamiyat + java + it + ai * 100/ 10;
+    result = (english + maths + urdu + computer + accounting + marketing + islamiyat + java + it + ai) * 100/ 1000;
     document.querySelector("#result").innerHTML = `You have Got ${result}% Marks`;
 }
