@@ -10,25 +10,32 @@ function calculate(){
     let it = +document.querySelector("#it").value;
     let ai = +document.querySelector("#ai").value;
 
+    
+    //percentage 
     result = (english + maths + urdu + computer + accounting + marketing + islamiyat + java + it + ai) * 100/ 1000;
-    document.querySelector("#result").innerHTML = `You have Got ${result}% Marks`;
+    document.querySelector("#result").innerHTML = `Your Percentage ${result}%`;
 
-
+   //Obtained Marks
+    obtained = english + maths + urdu + computer + accounting + marketing + islamiyat + java + it + ai;
+    document.querySelector("#obtained").innerHTML = `Total Obtained ${obtained} Marks Out of <strong>1000</strong>`;
+   
+   
+   //Grade 
      document.querySelector("#result").value;
     if( result >= 80){
-       document.querySelector("#grade").innerHTML= "<h1 style='color:green;'>Congratulations!</h1> A1 Grade";
+       document.querySelector("#grade").innerHTML= "<span style='color:green;'>Congratulations!</span> A1 Grade";
     }
     else if (result >= 70 && result < 80){
-        document.querySelector("#grade").innerHTML= "<h1 style='color:blue;'>Congratulations!</h1> A Grade";
+        document.querySelector("#grade").innerHTML= "<span style='color:blue;'>Congratulations!</span> A Grade";
     }
     else if (result >= 60 && result < 70){
-        document.querySelector("#grade").innerHTML= "<h1 style='color:pink;'>Congratulations!</h1> B Grade";
+        document.querySelector("#grade").innerHTML= "<span style='color:purple;'>Congratulations!</span> B Grade";
     } 
     else if (result >= 50 && result < 60){
-        document.querySelector("#grade").innerHTML= "<h1 style='color:yellow;'>Congratulations!</h1> C Grade";
+        document.querySelector("#grade").innerHTML= "<span style='color:yellow;'>Congratulations!</span> C Grade";
     }
     else {
-        document.querySelector("#grade").innerHTML= "<h1 style='color:red;'></h1> Fail";
+        document.querySelector("#grade").innerHTML= "<span style='color:red;'></span> Fail";
     }
     
 } 

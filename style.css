@@ -1,8 +1,11 @@
-.container {
-text-align: justify;
+.container{
+    background-color: antiquewhite;
+    text-align: center;
 }
-h1{
-    color: blueviolet;
+.container h1{
+    color: blue;
+    font-weight: bolder;
+    text-align: center;
 }
 form{
     border: 2px dashed rgb(54, 126, 145);
@@ -10,10 +13,17 @@ padding: 30px 50px;
 }
 label{
     font-size: 20px;
-    color:crimson;
+    color:black;
     font-weight: 800;
 }
 input{
 color: crimson;
-padding: 5px 10px;
+padding: 0px 10px;
+}
+.result{
+    text-align: center;
+}
+.result h1{
+    font-weight: bolder;
+    color: chocolate;
 }
